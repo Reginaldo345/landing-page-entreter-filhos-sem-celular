@@ -22,7 +22,7 @@ function App() {
           </div>
 
           <div className={styles.heroCtaWrapper}>
-            <a href="#checkout" className={styles.ctaButtonPrimary}>
+            <a href="https://pay.kiwify.com.br/E2fB0Kj" target="_blank" rel="noreferrer" className={styles.ctaButtonPrimary}>
               Comprar E-book Agora
             </a>
             <p className={styles.guaranteeText}>🔒 Pagamento 100% Seguro. Entrega Imediata por E-mail.</p>
@@ -85,9 +85,9 @@ function App() {
             <p>Pagamento único</p>
           </div>
 
-          <button className={styles.ctaButtonLarge}>
+          <a href="https://pay.kiwify.com.br/E2fB0Kj" target="_blank" rel="noreferrer" className={styles.ctaButtonLarge} style={{ textDecoration: 'none', display: 'inline-block' }}>
             Garantir Meu E-book
-          </button>
+          </a>
           
           <div className={styles.securityBadges}>
             <span>✔️ Acesso Imediato</span>
