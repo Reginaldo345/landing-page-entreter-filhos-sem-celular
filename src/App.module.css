@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:global(body) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.container {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+/* --- HEADER / HERO --- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10%;
+  min-height: 85vh;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.badge {
+  display: inline-block;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.headerContent {
+  flex: 1;
+  max-width: 50%;
+  z-index: 2;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  color: #0f172a;
+  letter-spacing: -1px;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* PRICE TAG HERO */
+.priceContainer {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-left: 4px solid #2563eb;
+  background: #f8fafc;
+  border-radius: 0 8px 8px 0;
+}
+
+.priceLabel {
+  display: block;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.priceValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #10b981;
+  line-height: 1;
+}
+
+.heroCtaWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.ctaButtonPrimary {
+  display: inline-block;
+  padding: 1.25rem 3.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  background: #10b981;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.4), 0 2px 4px -1px rgba(16, 185, 129, 0.2);
+  text-align: center;
+}
+
+.ctaButtonPrimary:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.4), 0 4px 6px -2px rgba(16, 185, 129, 0.2);
+}
+
+.guaranteeText {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.imageWrapper {
+  flex: 1;
+  max-width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ebookImage {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  /* Blend mode acts perfectly on the white #ffffff header background */
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 20px 25px rgba(0,0,0,0.1));
+}
+
+
+/* --- PROBLEM SECTION --- */
+.problemSection {
+  background: #f1f5f9;
+  padding: 6rem 10%;
+  text-align: center;
+}
+
+.problemContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.problemContent h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.problemContent p {
+  font-size: 1.15rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+
+/* --- CONTENT SECTION --- */
+.contentSection {
+  padding: 6rem 10%;
+  background-color: #ffffff;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #0f172a;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.contentCard {
+  background: #f8fafc;
+  padding: 3rem 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.contentCard:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.contentCard h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.contentCard p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+
+/* --- FOOTER CTA --- */
+.footer {
+  text-align: center;
+  padding: 6rem 10%;
+  background: #0f172a;
+  color: white;
+}
+
+.footerContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footerTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.footerDescription {
+  margin-bottom: 2.5rem;
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.footerPriceContainer {
+  margin-bottom: 2.5rem;
+}
+
+.footerPriceContainer h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #10b981;
+  margin: 0;
+  line-height: 1;
+}
+
+.footerPriceContainer p {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+.ctaButtonLarge {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 1.25rem 4rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.4);
+}
+
+.ctaButtonLarge:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.securityBadges {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .header { padding: 4rem 5%; }
+  .title { font-size: 2.75rem; }
+  .problemSection, .contentSection, .footer { padding: 5rem 5%; }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .headerContent {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  
+  .heroCtaWrapper { align-items: stretch; }
+  .ctaButtonPrimary { text-align: center; }
+  
+  .imageWrapper { max-width: 90%; }
+  
+  .problemContent h2 { font-size: 1.8rem; }
+  .sectionTitle { font-size: 2rem; }
+  
+  .securityBadges { gap: 1rem; flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  .title { font-size: 2.25rem; }
+  .subtitle { font-size: 1.1rem; }
+  .priceValue { font-size: 2rem; }
+}
