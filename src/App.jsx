@@ -42,18 +42,18 @@ function App() {
         {isMenuOpen && (
           <div className={styles.menuOverlay} onClick={closeMenu}>
             <ul className={styles.menuList} onClick={(e) => e.stopPropagation()}>
-              <li><a href="#header" onClick={closeMenu}>Início</a></li>
-              <li><a href="#problem" onClick={closeMenu}>O Problema</a></li>
-              <li><a href="#combo" onClick={closeMenu}>O Que Vai Aprender</a></li>
-              <li><a href="#importance" onClick={closeMenu}>Por Que é Importante?</a></li>
-              <li><a href="#checkout" onClick={closeMenu}>Adquirir E-book</a></li>
+              <li><a href="#inicio" onClick={closeMenu}>Início</a></li>
+              <li><a href="#problema" onClick={closeMenu}>O Problema</a></li>
+              <li><a href="#conteudos" onClick={closeMenu}>O Que Vai Aprender</a></li>
+              <li><a href="#importancia" onClick={closeMenu}>Por Que é Importante?</a></li>
+              <li><a href="#comprar" onClick={closeMenu}>Adquirir E-book</a></li>
             </ul>
           </div>
         )}
       </nav>
 
       {/* HEADER HERO SECTION */}
-      <header id="header" className={styles.header}>
+      <header id="inicio" className={styles.header}>
         <div className={styles.headerContent}>
           <span className={styles.badge}>Guia Prático e Direto ao Ponto</span>
           <h1 className={styles.title}>
@@ -69,7 +69,7 @@ function App() {
           </div>
 
           <div className={styles.heroCtaWrapper}>
-            <a href="#checkout" className={styles.ctaButtonPrimary}>
+            <a href="#comprar" className={styles.ctaButtonPrimary}>
               Comprar E-book Agora
             </a>
             <p className={styles.guaranteeText}>🔒 Pagamento 100% Seguro. Entrega Imediata por E-mail.</p>
@@ -85,7 +85,7 @@ function App() {
       </header>
 
       {/* ABOUT THE PROBLEM SECTION */}
-      <section id="problem" className={styles.problemSection}>
+      <section id="problema" className={styles.problemSection}>
         <div className={styles.problemContent}>
           <h2>A realidade que ninguém te conta sobre o uso excessivo de telas</h2>
           <p>
@@ -98,7 +98,7 @@ function App() {
       </section>
 
       {/* COMBO CONTENT SECTION */}
-      <section id="combo" className={styles.comboSection}>
+      <section id="conteudos" className={styles.comboSection}>
         <div className={styles.comboHeader}>
           <h2 className={styles.sectionTitle}>O que você vai aprender</h2>
           <p className={styles.comboDescription}>
@@ -135,7 +135,7 @@ function App() {
       </section>
 
       {/* IMPORTANCE SECTION */}
-      <section id="importance" className={styles.importanceSection}>
+      <section id="importancia" className={styles.importanceSection}>
         <div className={styles.importanceHeader}>
           <h2 className={styles.sectionTitle}>Por que este e-book é tão importante para o seu filho?</h2>
           <p className={styles.importanceDescription}>
@@ -168,7 +168,7 @@ function App() {
 
 
       {/* FOOTER CALL TO ACTION */}
-      <footer className={styles.footer} id="checkout">
+      <footer className={styles.footer} id="comprar">
         <div className={styles.footerContent}>
           <h2 className={styles.footerTitle}>Transforme a rotina da sua casa hoje</h2>
           <p className={styles.footerDescription}>
