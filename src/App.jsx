@@ -18,7 +18,7 @@ function App() {
           
           <div className={styles.priceContainer}>
             <span className={styles.priceLabel}>Adquira o e-book por apenas</span>
-            <div className={styles.priceValue}>R$ 9,90</div>
+            <div className={styles.priceValue}>R$ 19,90</div>
           </div>
 
           <div className={styles.heroCtaWrapper}>
