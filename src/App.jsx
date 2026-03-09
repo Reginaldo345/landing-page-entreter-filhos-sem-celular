@@ -81,7 +81,7 @@ function App() {
           </p>
           
           <div className={styles.footerPriceContainer}>
-            <h2>R$ 9,90</h2>
+            <h2>R$ 19,90</h2>
             <p>Pagamento único</p>
           </div>
 
