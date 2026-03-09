@@ -91,7 +91,6 @@ function App() {
           
           <div className={styles.securityBadges}>
             <span>✔️ Acesso Imediato</span>
-            <span>✔️ 7 Dias de Garantia</span>
             <span>✔️ Compra Segura</span>
           </div>
         </div>
